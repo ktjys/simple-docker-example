@@ -1,3 +1,3 @@
 FROM ubuntu:latest
 
-cmd echo 'Hello Kaniko. It's alive.'
+cmd echo 'Hi Kaniko. Meet Beelive'
