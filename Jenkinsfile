@@ -37,7 +37,6 @@ spec:
       steps {
         container(name: 'kaniko') {
           sh '''echo "PATH=$PATH"
-export PATH=$PATH:/kaniko
 /kaniko/executor --context `pwd` --no-push '''
         }
 
