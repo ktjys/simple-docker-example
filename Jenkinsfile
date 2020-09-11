@@ -37,7 +37,7 @@ spec:
       steps {
         container(name: 'kaniko') {
           sh '''echo "PATH=$PATH"
-/kaniko/executor --context `pwd` --no-push '''
+/kaniko/executor --context `pwd` --destination  400603430485.dkr.ecr.ap-northeast-2.amazonaws.com/kaniko-test:latest'''
         }
 
       }
