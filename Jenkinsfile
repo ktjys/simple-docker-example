@@ -35,7 +35,7 @@ spec:
   stages {
     stage('build image') {
       steps {
-        container(name: 'kaniko') {
+        container(name: 'kaniko', shell: '/busy/sh') {
           sh '''echo "PATH=$PATH"
 /kaniko/executor --context `pwd` --destination  400603430485.dkr.ecr.ap-northeast-2.amazonaws.com/kaniko-test:latest'''
         }
