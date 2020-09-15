@@ -12,7 +12,7 @@ spec:
     image: gcr.io/kaniko-project/executor:debug
     imagePullPolicy: Always
     command:
-    - cat
+    - /busybox/cat
     tty: true
     volumeMounts:
     - name: docker-config
