@@ -1,7 +1,7 @@
 pipeline {
   agent {
     kubernetes {
-      label 'kaniko-test'
+      label 'kaniko'
       yaml '''
 kind: Pod
 metadata:
